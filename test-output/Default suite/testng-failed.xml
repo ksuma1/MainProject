@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.DriverClass.Driverclass">
+      <class name="DriverClass.Driverclass">
         <methods>
+          <include name="tearDown"/>
           <include name="PreRequisite"/>
+          <include name="TestCase1"/>
           <include name="Testcase2"/>
         </methods>
-      </class> <!-- test.DriverClass.Driverclass -->
+      </class> <!-- DriverClass.Driverclass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
